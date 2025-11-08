@@ -1,0 +1,57 @@
+<!--
+  @description       : 
+  @author            : ChangeMeIn@UserSettingsUnder.SFDoc
+  @group             : 
+  @last modified on  : 11-08-2025
+  @last modified by  : ChangeMeIn@UserSettingsUnder.SFDoc
+-->
+<template>
+    <lightning-card title="SoftHR Dashboard">
+        <div class="dashboard">
+
+            <!-- Metric Cards -->
+            <div class="metrics">
+                <div class="metric-card active">
+                    <p class="metric-title">Active Employees</p>
+                    <h1 class="metric-value">{activeEmployees}</h1>
+                    <p class="metric-sub">Updated {lastUpdated}</p>
+                </div>
+
+                <div class="metric-card leave">
+                    <p class="metric-title">Pending Leave Requests</p>
+                    <h1 class="metric-value">{pendingLeaves}</h1>
+                    <p class="metric-sub">Awaiting approval</p>
+                </div>
+
+                <div class="metric-card storage">
+                    <p class="metric-title">Total Departments</p>
+                    <h1 class="metric-value">{departments}</h1>
+                    <p class="metric-sub">Organization-wide</p>
+                </div>
+
+                <div class="metric-card users">
+                    <p class="metric-title">Active Users</p>
+                    <h1 class="metric-value">{activeUsers}</h1>
+                    <p class="metric-sub">Logged in this month</p>
+                </div>
+            </div>
+
+            <!-- Chart Section -->
+            <div class="chart-section">
+                <h2 class="section-title">Employee Growth</h2>
+                <canvas class="chart" lwc:dom="manual"></canvas>
+            </div>
+
+            <!-- Summary Section -->
+            <div class="summary">
+                <h2 class="section-title">HR Summary</h2>
+                <ul>
+                    <li><strong>Onboarding:</strong> {onboarding}</li>
+                    <li><strong>Offboarding:</strong> {offboarding}</li>
+                    <li><strong>Training Sessions:</strong> {training}</li>
+                </ul>
+            </div>
+
+        </div>
+    </lightning-card>
+</template>
