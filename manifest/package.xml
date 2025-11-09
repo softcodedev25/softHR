@@ -16,5 +16,8 @@
     <types><members>*</members><name>StaticResource</name></types>
     <types><members>*</members><name>CustomTab</name></types>
     <types><members>*</members><name>FlexiPage</name></types>
+    <types><members>*</members><name>ContentAsset</name></types>
+    <types><members>*</members><name>EmailTemplate</name></types>
+    <types><members>*</members><name>WorkflowAlert</name></types>
     <version>65.0</version>
 </Package>
